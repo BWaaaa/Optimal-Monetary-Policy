@@ -1,7 +1,3 @@
-% This model does the work of Professor Richard Dennis's LN1 Page18 Chapter3
-% Most of the notation will be consistent with the Lecture Note; 
-% for thoes that are not, explanation will be included to make it as readable as possible;
-
 'Simulation for New Keysian Rottemberg Model'
 Author = 'Brian Wang'
 
@@ -42,7 +38,8 @@ s       = 0.05;     % Size of the technology shock
 % If sig > 1, correlation(H,Y) usually is negative:
 % This is explained by the fact that consumer is LESS elastic in intertemporal consumption, so they would rather enjoy more leisure with a positive productivity shock;
 
-%  Computers are modest. They only report what they see. If i magnify the shocl to such a degree, it can see nothing, so it says nothing! Rubbish in, rubbsih out; gold in, gold out.
+%  Note: please ensure the chock is mediated by s=0.05. Larger shocks will destroy the convergence because dynare uses stochastic simulation 
+%  Intuitively, We will DESTROY the economy if we let the shock to have variance 1. Noted the steady state output is only 1, by such a great shock the economic will never go back to norm. 
 
 model;
 
@@ -70,7 +67,6 @@ end;
 %  9 for technology process, with reduced size of the shock!
 %  10 to show monetary policy shock, with reduced size of the shock!
 %  The s is a size adjustment to the productivity shock, which is CRUCIAL to this model to be around 0.05. 
-%  We will DESTROY the economy if we let the shock to have variance 1. Noted the steady state output is only 1, by such a great shock the economic will never go back to norm. 
 
 initval;
 A   = 1;
@@ -98,4 +94,6 @@ steady;
 check;
 
 stoch_simul(periods=1000,irf=100);
+%  We will DESTROY the economy if we let the shock to have variance 1. Noted the steady state output is only 1, by such a great shock the economic will never go back to norm. 
+
 dynasave('simudata_NK_RBerg.mat');
