@@ -94,6 +94,6 @@ steady;
 check;
 
 stoch_simul(periods=1000,irf=100);
-%  We will DESTROY the economy if we let the shock to have variance 1. Noted the steady state output is only 1, by such a great shock the economic will never go back to norm. 
+% Notice that the default simulation by Dynare is 1. stochastic with 50 repitition, 2. log-linearized to the second order
 
 dynasave('simudata_NK_RBerg.mat');
