@@ -1,0 +1,118 @@
+>> NK_Basics_Implement
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 7 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+ans =
+
+    'Simulation for Rottembert NK Model: without Price Rigidity'
+
+
+Author =
+
+    'Brian Wang'
+
+
+STEADY-STATE RESULTS:
+
+A  		 1
+Y  		 0.978813
+H  		 0.978813
+w  		 0.888889
+MC 		 0.888889
+R  		 1.0101
+C  		 0.978813
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+             0.9              0.9                0
+       1.122e+16       -1.122e+16                0
+
+
+There are 1 eigenvalue(s) larger than 1 in modulus 
+for 1 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         7
+  Number of stochastic shocks: 1
+  Number of state variables:   1
+  Number of jumpers:           1
+  Number of static variables:  5
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables           e
+e            1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                   A               Y               H               w              MC               R               C
+Constant                    1.000000        0.978813        0.978813        0.888889        0.888889        1.009725        0.978813
+(correction)                       0               0               0               0               0       -0.000376               0
+A(-1)                       0.900000        0.961016        0.080085        0.800000               0       -0.049587        0.961016
+e                           0.050000        0.053390        0.004449        0.044444               0       -0.002755        0.053390
+A(-1),A(-1)                -0.045000       -0.008737       -0.036766       -0.040000               0        0.026011       -0.008737
+e,e                         0.001250        0.001456        0.000010        0.001111               0        0.000004        0.001456
+A(-1),e                     0.045000        0.052419        0.000364        0.040000               0        0.000135        0.052419
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+A                 0.980072        0.110641        0.012241        0.333360        0.316797
+Y                 0.958155        0.118082        0.013943        0.366799        0.350067
+H                 0.976522        0.009926        0.000099        0.004986        0.126315
+w                 0.871175        0.098347        0.009672        0.333360        0.316797
+MC                0.888889        0.000000        0.000000       -1.000000       -2.000000
+R                 1.011195        0.006157        0.000038        0.046169        0.119133
+C                 0.958155        0.118082        0.013943        0.366799        0.350067
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE         A       Y       H       w      MC       R       C
+A           1.0000  1.0000  0.9972  1.0000  0.0000 -0.9962  1.0000
+Y           1.0000  1.0000  0.9966  1.0000  0.0000 -0.9956  1.0000
+H           0.9972  0.9966  1.0000  0.9972 -0.0000 -0.9999  0.9966
+w           1.0000  1.0000  0.9972  1.0000 -0.0000 -0.9962  1.0000
+MC          0.0000  0.0000 -0.0000 -0.0000  1.0000 -0.0000  0.0000
+R          -0.9962 -0.9956 -0.9999 -0.9962 -0.0000  1.0000 -0.9956
+C           1.0000  1.0000  0.9966  1.0000  0.0000 -0.9956  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+A           0.8992  0.8024  0.7089  0.6295  0.5639
+Y           0.8992  0.8024  0.7089  0.6295  0.5638
+H           0.8983  0.8021  0.7072  0.6283  0.5633
+w           0.8992  0.8024  0.7089  0.6295  0.5639
+MC             Inf     Inf     Inf     Inf     Inf
+R           0.8981  0.8018  0.7068  0.6279  0.5629
+C           0.8992  0.8024  0.7089  0.6295  0.5638
+Total computing time : 0h00m02s
