@@ -1,7 +1,4 @@
-% This model does the work of Professor Richard Dennis's LN1 Page 18 3.5.1,  
-% In fact, this model is the Flex-Path model where the burning cost coefficient psi = 0.
-% Most of the notation will be consistent with the Lecture Note; 
-% for thoes that are not, explanation will be included to make it as readable as possible;
+% This model is a building block for New Keysian models. In fact, this model is the Flex-Path model where the burning cost coefficient psi = 0.
 
 'Simulation for NK Model: without Price Rigidity'
 Author = 'Brian Wang'
