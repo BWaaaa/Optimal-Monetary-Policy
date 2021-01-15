@@ -1,9 +1,9 @@
-% This model does the work of Professor Richard Dennis's LN1 log-linear New Keysian Model
-% with a Taylor Rule pegged on a Fixed Long-run Output (the steady state level, I will approximately take it as 0.98).
+% This model does the work for log-linear New Keysian Model with a Taylor Rule pegged on a Fixed Long-run Output 
+% (the steady state level, I will approximately take it as 0.98).
+% 
 % The reason for this simplification on Taylor Rule is to show an independent NK model, avoiding introducing the flex-path model, 
 % which is required in a standard Taylor Rule implicitly by Y_tilda.
-% Most of the notation will be consistent with the Lecture Note; 
-% for thoes that are not, explanation will be included to make it as readable as possible;
+% 
 
 'Simulation for New Keynesian Rottemberg Model: with Fixed Long-run Output as Benchmark in Taylor Rule'
 Author = 'Brian Wang'
@@ -95,4 +95,6 @@ steady;
 check;
 
 stoch_simul(periods=1000,irf=100);
+% Notice that the default simulation by Dynare is 1. stochastic with 50 repitition, 2. log-linearized to the second order
+
 dynasave('simudata_NK_Rberg_FixTaylor.mat');
