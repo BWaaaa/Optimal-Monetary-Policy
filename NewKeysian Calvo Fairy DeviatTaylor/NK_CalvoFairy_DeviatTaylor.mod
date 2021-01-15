@@ -2,7 +2,7 @@
 'Brian Wang'
 % =========================================================================
 % DESCRIPTION:
-% This file contains New Keysian Calvo model, following Prof.Dennis's LN1
+% This file contains New Keysian Calvo model
 %
 % Deviation Taylor Rule: CB sets nominal interest rate with a trade-off 
 % between deviation of output from Flex-Price Path level and inflation. 
@@ -21,14 +21,14 @@
 % Notice: One important conclusion from theory is that the Flex-Price Path 
 % of Calvo Fairy Model is exactly the same as which of Rottemberg Burning 
 % Model. This is because, respectively, the Flex-Price Path model equals 
-    % 1.NK Rottemberg: psi=0, Charizard uses Burn-Up (喷火龙使用了燃尽)>_<;
-    % 2.Calvo Fairy: thet=0, Alcremie uses Charm (霜奶仙就是正义！)(~_~);
+    % 1.NK Rottemberg: psi=0;
+    % 2.Calvo Fairy: thet=0;
 % 
 % -------------------------------------------------------------------------
 % REFERENCES:
-% 1.Professor Richard Dennis Lecture Note 1
+% 1.Lecture Note 
 % 2.Monetary policy, inflation, and the business cycle : an introduction to
-%   the new Keynesian framework and its applications / Jordi Galí, Ch.3 
+%   the new Keynesian framework and its applications / Jordi Gal铆, Ch.3 
 %
 % =========================================================================
 % MODEL: 
@@ -76,7 +76,7 @@ sig     = 1;        % CRRA, 1 = log utility
 phi     = 5;        % Labour Intensity 
 rho     = 0.9;      % External Persistency
 eps     = 9;        % Dixit Stiglitz Elasticity of Substitution
-thet    = 0.75;     % (1-thet is) The Smile of Gardevoir (霜奶仙的微笑) ~_~
+thet    = 0.75;     % (1-thet is) The Smile of the Fairy
 n       = 1.5;      % Elasticity of Inflation in Talor Rule
 m       = 0.5/4;    % Elasticity of Output Gap in Taylor Rule
 s       = 0.05;     % Size (and direction if negative) of Shocks  
@@ -91,7 +91,7 @@ s       = 0.05;     % Size (and direction if negative) of Shocks
     % they would rather enjoy more leisure at a positive productivity shock
 % 2. Computers are modest. They only report what they see. Therefore, keep
     % s small (0.05). If I magnify the shock to such a degree that it sees 
-    % nothing, it says nothing. Quote from CompSci: Rubbish in, rubbsih out
+    % nothing, it says nothing. 
 
 
 % Calvo Fairy Model:
@@ -127,7 +127,7 @@ end;
 %  1 for the Labour Demand as the firm side FOC. - LN1 eq(37) ;
 %  2 for optimized marginal cost as the firm side FOC. - LN1 eq(38);
    % This decides the production level, so interpreted as Goods Supply;
-%  3 for Fairy's Impact on lucky firms. - LN1 eq(32) (可爱就是正义) ~_~；
+%  3 for Fairy's Impact on lucky firms. - LN1 eq(32);
 %  4 for Labour Supply as the household side FOC. - LN1 eq(5),eq(6);
 %  5 for Goods Demand from Euler Equation on nominal bonds - LN1 eq(7);
 %  6 for Goods Market Clear-out - LN1 eq(43);
