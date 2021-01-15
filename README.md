@@ -1,3 +1,5 @@
+This folder records the dynare codes related to a lecture on optimal monetary policy. 
+
 Downloand Dynare from \
 https://www.dynare.org/download/
 
