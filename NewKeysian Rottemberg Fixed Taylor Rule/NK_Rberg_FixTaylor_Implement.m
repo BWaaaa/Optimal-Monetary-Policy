@@ -1,5 +1,5 @@
 doc = 'Dynare Prctice on NK Simple Model';
-d0c.author = 'Brian Wang';
+doc.author = 'Brian Wang';
 
 
 addpath D:\%where you instal Dynare\4.5.7\matlab
