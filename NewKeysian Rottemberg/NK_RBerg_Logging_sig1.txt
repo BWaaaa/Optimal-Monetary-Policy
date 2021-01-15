@@ -1,0 +1,154 @@
+>> LN1_NKImplement
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 10 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+ans =
+
+    'Simulation for New Keysian Rottemberg Model'
+
+
+Author =
+
+    'Brian Wang'
+
+
+STEADY-STATE RESULTS:
+
+A     		 1
+V     		 0
+Y_til 		 1
+C     		 0.980561
+H     		 0.980561
+w     		 0.888889
+MC    		 0.888889
+R     		 1.0101
+p     		 1
+Y     		 0.980561
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+             0.9              0.9                0
+            1.43            1.371           0.4086
+            1.43            1.371          -0.4086
+       3.352e+17       -3.352e+17                0
+
+
+There are 3 eigenvalue(s) larger than 1 in modulus 
+for 3 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         10
+  Number of stochastic shocks: 2
+  Number of state variables:   1
+  Number of jumpers:           3
+  Number of static variables:  6
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables           e         v
+e            1.000000  0.000000
+v            0.000000  1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                   A               V           Y_til               C               H               w              MC               R               p               Y
+Constant                    1.000000               0        0.993218        0.973911        0.973911        0.852717        0.852717        0.995920        0.991205        0.973911
+(correction)                       0               0       -0.006782       -0.006650       -0.006650       -0.036172       -0.036172       -0.014181       -0.008795       -0.006650
+A(-1)                       0.900000               0       -0.025512        0.857489       -0.025016        0.663936       -0.136064       -0.215999       -0.140433        0.857489
+e                           0.050000               0       -0.001417        0.047638       -0.001390        0.036885       -0.007559       -0.012000       -0.007802        0.047638
+v                                  0        0.050000       -0.024691       -0.024211       -0.024211       -0.131687       -0.131687        0.024941       -0.014815       -0.024211
+A(-1),A(-1)                -0.045000               0        0.082197       -0.759563        0.080600       -0.416599       -0.254142        0.421137        0.265746        0.013960
+e,e                         0.001250               0        0.000214       -0.001021        0.000210       -0.000261       -0.000994        0.000966        0.000603        0.001366
+v,e                                0               0        0.004765       -0.005605        0.004672        0.011542        0.018126        0.004266        0.002733        0.003462
+v,v                                0               0        0.004071       -0.004616        0.003992        0.022038        0.022038        0.005371        0.003138        0.003992
+A(-1),e                     0.045000               0        0.007716       -0.036758        0.007566       -0.009403       -0.035797        0.034793        0.021725        0.049189
+A(-1),v                            0               0        0.085766       -0.100896        0.084098        0.207750        0.326269        0.076791        0.049188        0.062308
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+A                 1.025464        0.114063        0.013010        0.373260        0.112089
+V                -0.002065        0.048662        0.002368        0.028633        0.231899
+Y_til             0.999316        0.025304        0.000640        1.376004        3.430855
+C                 0.982136        0.104054        0.010827       -0.089849       -0.334669
+H                 0.979890        0.024812        0.000616        1.376004        3.430855
+w                 0.892870        0.149638        0.022392        0.251786        0.418698
+MC                0.873089        0.133546        0.017834        1.339403        2.819053
+R                 1.001251        0.037317        0.001393        0.205307        0.260568
+p                 0.995477        0.022395        0.000502        1.363525        1.889984
+Y                 1.004334        0.110952        0.012310        0.327947        0.196526
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE         A       V   Y_til       C       H       w      MC       R       p       Y
+A           1.0000  0.0644 -0.1273  0.9411 -0.1273  0.4892 -0.1955 -0.5448 -0.6821  0.9761
+V           0.0644  1.0000 -0.8540 -0.1983 -0.8540 -0.7881 -0.9023  0.6779 -0.6148 -0.1326
+Y_til      -0.1273 -0.8540  1.0000  0.0099  1.0000  0.7680  0.9824 -0.3323  0.7830  0.0897
+C           0.9411 -0.1983  0.0099  1.0000  0.0099  0.6409 -0.0082 -0.7906 -0.5900  0.9535
+H          -0.1273 -0.8540  1.0000  0.0099  1.0000  0.7680  0.9824 -0.3323  0.7830  0.0897
+w           0.4892 -0.7881  0.7680  0.6409  0.7680  1.0000  0.7539 -0.7639  0.2271  0.6638
+MC         -0.1955 -0.9023  0.9824 -0.0082  0.9824  0.7539  1.0000 -0.3912  0.7866  0.0211
+R          -0.5448  0.6779 -0.3323 -0.7906 -0.3323 -0.7639 -0.3912  1.0000  0.1627 -0.6348
+p          -0.6821 -0.6148  0.7830 -0.5900  0.7830  0.2271  0.7866  0.1627  1.0000 -0.5156
+Y           0.9761 -0.1326  0.0897  0.9535  0.0897  0.6638  0.0211 -0.6348 -0.5156  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+A           0.8904  0.7834  0.6946  0.6154  0.5432
+V           0.0120 -0.0592  0.0598  0.0311 -0.0221
+Y_til       0.0336 -0.0312  0.0899  0.0145  0.0047
+C           0.8068  0.6980  0.6268  0.5393  0.4707
+H           0.0336 -0.0312  0.0899  0.0145  0.0047
+w           0.2285  0.1457  0.2152  0.1280  0.0986
+MC          0.0543 -0.0128  0.1051  0.0333  0.0138
+R           0.3221  0.2292  0.2557  0.2109  0.1516
+p           0.4696  0.3857  0.3942  0.3222  0.2949
+Y           0.8486  0.7406  0.6614  0.5770  0.5082
+
+
+
+VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
+                        e                 v  Tot. lin. contr.
+A                  100.11              0.00            100.11
+V                    0.00            100.11            100.11
+Y_til                1.30             97.11             98.41
+C                   94.99              5.42            100.42
+H                    1.30             97.11             98.41
+w                   28.63             79.14            107.76
+MC                   2.51             99.36            101.86
+R                   42.15             45.52             87.66
+p                   49.62             46.40             96.02
+Y                   97.26              4.86            102.12
+Note: numbers do not add up to 100 due to i) non-zero correlation of simulated shocks in small samples and ii) nonlinearity
+
+Total computing time : 0h00m03s
