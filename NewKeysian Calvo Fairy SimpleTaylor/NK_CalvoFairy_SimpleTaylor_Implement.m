@@ -1,7 +1,6 @@
 doc = struct;
 doc.title = 'Dynare Prctice on New Keysian Simple Models: Rottemberg(1982) and Calvo(1983)';
-doc.author1 = 'Brian Wang';
-doc.author2 = 'Professor Richard Dennis';
+doc.author = 'Brian Wang';
 doc.date = date;
 doc.mod = 'corresponding model';
 doc.notes = 'correspodong explainative files';
