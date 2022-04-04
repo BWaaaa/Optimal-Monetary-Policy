@@ -8,3 +8,4 @@ Original Papers for these models: \
 [Calvo, Guillermo A. "Staggered prices in a utility-maximizing framework." Journal of monetary Economics 12.3 (1983): 383-398.](https://www.sciencedirect.com/science/article/abs/pii/0304393283900600)
 
 Enjoy macroeconomics and Have Fun!\
+![少儿社的猫](https://user-images.githubusercontent.com/54651885/161470534-afdb90ed-d506-4a32-94fd-e6d4ab034b72.jpg)
